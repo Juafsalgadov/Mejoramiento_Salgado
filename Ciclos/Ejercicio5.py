@@ -1,3 +1,4 @@
+#If, Elif, Else
 numero = int(input("Escriba un número: "))
 if numero % 4 == 0:
     print(f"{numero} es múltiplo de cuatro y de dos")

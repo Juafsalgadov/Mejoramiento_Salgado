@@ -1,3 +1,4 @@
+#Anidacion
 print("Este programa mezcla dos colores.")
 print("  r. Rojo      a. Azul")
 primera = input("  Elija un color (r o a): ")

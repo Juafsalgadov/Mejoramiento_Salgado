@@ -1,5 +1,6 @@
+#For en lista
 Listanombre = []
-for N in range(3):
+for i in range(4):
     Nombre = input("Ingrese un nombre para la lista: ")
     Listanombre.append(Nombre)
 print("La lista final es:", Listanombre)

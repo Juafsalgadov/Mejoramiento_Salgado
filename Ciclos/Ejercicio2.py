@@ -1,3 +1,4 @@
+#If, Else
 edad = int(input("¿Cuantos años tiene? "))
 if edad < 18:
     print("Es usted menor de edad.")
