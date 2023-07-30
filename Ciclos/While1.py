@@ -1,6 +1,16 @@
-#While dias de la semana
-dia = 0    
-semana = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo']
-while dia < 7:
-   print("Hoy es " + semana[dia])
-   dia += 1
+#Determinar cuales y cuantos números perfectos hay entre 1 y 1000?
+np = 0
+pa = 1
+while pa <= 1000:
+    sd = 0
+    for i in range(1, pa):
+        if pa % i == 0:
+            sd += i
+
+    if sd == pa:
+        np += 1
+        print("Numero perfecto:", pa)
+
+    pa += 1
+
+print("Cantidad de numeros perfectos de 1 a 1000:", np)

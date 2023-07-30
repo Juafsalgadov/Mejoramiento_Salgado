@@ -1,9 +1,13 @@
-#Sangrado de los bloques
-edad = int(input("¿Cuántos años tiene? "))
-if edad < 18:
-    print("Es usted menor de edad.")
-    print("Recuerde que está en la edad de aprender.")
-else:
-    print("Es usted mayor de edad.")
-    print("Recuerde que debe seguir aprendiendo.")
-print("¡Hasta la próxima!")
+#Solicite la hora en formato horas, minutos y segundos. Imprima en pantalla la hora que será dentro de 1 segundo
+horas = int(input("Ingrese la hora: "))
+minutos = int(input("Ingrese los minutos: "))
+segundos = int(input("Ingrese los segundos: "))
+st = horas * 3600 + minutos * 60 + segundos
+
+st += 1
+nh = st // 3600
+st %= 3600
+nm = st // 60
+st %= 60
+ns = st
+print("La hora dentro de 1 segundo sera:", "{:02d}:{:02d}:{:02d}".format(nh, nm, ns))

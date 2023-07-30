@@ -1,7 +1,11 @@
-#While mayor a cero
-numero = 0
+#Calcular el máximo de números positivos introducidos por teclado, sabiendo que metemos números hasta que introduzcamos uno negativo. El negativo no cuenta.
+nm = 0
+numero = int(input("Ingrese un numero positivo: "))
 
-while numero <= 0:
-    numero = int(input("Ingrese un numero mayor que cero: "))
+while numero >= 0:
+    if numero > nm:
+        nm = numero
 
-print("Ese numero es mayor acero")
+    numero = int(input("Ingrese un numero positivo: "))
+
+print("Los numeros positivos son:", nm)
